@@ -13,12 +13,10 @@
 <meta property="og:site_name" content="Zhu Yuxi">
 <meta property="og:description" content="git log: Lists the commit history in reverse chronological order(时间倒序). For each commit:  Commit hash Author name and Author email Author date Commit message  Example: 12345commit ca82a6dff817ec66f443">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://zhuyuxi333.github.io/assets/16444600960494.jpg">
 <meta property="article:published_time" content="2022-02-07T07:38:35.000Z">
-<meta property="article:modified_time" content="2022-02-10T02:29:09.793Z">
+<meta property="article:modified_time" content="2022-02-10T02:42:20.727Z">
 <meta property="article:author" content="Zhu Yuxi">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://zhuyuxi333.github.io/assets/16444600960494.jpg">
   
     <link rel="alternate" href="/atom.xml" title="Zhu Yuxi" type="application/atom+xml">
   
@@ -155,7 +153,59 @@
 <h4 id="Self-defined-Format-pretty-format"><a href="#Self-defined-Format-pretty-format" class="headerlink" title="Self-defined Format: --pretty=format"></a>Self-defined Format: <code>--pretty=format</code></h4><p>Example:</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ git log --pretty=format:&quot;%h - %an, %ar : %s&quot;             </span><br><span class="line">ca82a6d - Scott Chacon, 14 years ago : changed the verison number</span><br><span class="line">085bb3b - Scott Chacon, 14 years ago : removed unnecessary test code</span><br><span class="line">a11bef0 - Scott Chacon, 14 years ago : first commit</span><br></pre></td></tr></table></figure>
 
-<p><img src="/assets/16444600960494.jpg"></p>
+<p>Specifiers for <code>git log --pretty=format</code></p>
+<table>
+<thead>
+<tr>
+<th>Specifier</th>
+<th align="left">Description of Output</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>%H</td>
+<td align="left">Commit hash</td>
+</tr>
+<tr>
+<td>%h</td>
+<td align="left">Abbreviated commit hash</td>
+</tr>
+<tr>
+<td>%an</td>
+<td align="left">Author name</td>
+</tr>
+<tr>
+<td>%ae</td>
+<td align="left">Author email</td>
+</tr>
+<tr>
+<td>%ad</td>
+<td align="left">Author date</td>
+</tr>
+<tr>
+<td>%ar</td>
+<td align="left">Relative author date</td>
+</tr>
+<tr>
+<td>%cn</td>
+<td align="left">Commiter name</td>
+</tr>
+<tr>
+<td>%ce</td>
+<td align="left">Commiter email</td>
+</tr>
+<tr>
+<td>%cd</td>
+<td align="left">Commiter date</td>
+</tr>
+<tr>
+<td>%cr</td>
+<td align="left">Relative commiter date</td>
+</tr>
+<tr>
+<td>%s</td>
+<td align="left">Commit message</td>
+</tr>
+</tbody></table>
 <h2 id="Limit-Options"><a href="#Limit-Options" class="headerlink" title="Limit Options"></a>Limit Options</h2><p>limit options: options that let you show only a subset of commits</p>
 <h3 id="Number-Limit-lt-n-gt"><a href="#Number-Limit-lt-n-gt" class="headerlink" title="Number Limit: -&lt;n&gt;"></a>Number Limit: <code>-&lt;n&gt;</code></h3><p><code>-&lt;n&gt;</code>: Show only the last n commits.</p>
 <h3 id="Time-Limit"><a href="#Time-Limit" class="headerlink" title="Time Limit"></a>Time Limit</h3><p><code>--since=&lt;date&gt;</code>&#x2F;<code>--after=&lt;date&gt;</code>: Limit the commits to those made <strong>after</strong> the specified date.<br><code>--until=&lt;date&gt;</code>&#x2F;<code>--before=&lt;date&gt;</code>: Limit the commits to those made <strong>before</strong> the specified date. </p>
@@ -174,7 +224,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhuyuxi333.github.io/2022/02/07/git-log/" data-id="ckzgd4vys00001n1s0a64h6of" data-title="git log" class="article-share-link">分享</a>
+      <a data-url="https://zhuyuxi333.github.io/2022/02/07/git-log/" data-id="ckzgdldcx00013z1shge56g2p" data-title="git log" class="article-share-link">分享</a>
       
       
       
