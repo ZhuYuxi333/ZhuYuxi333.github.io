@@ -71,6 +71,66 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-Undoing-Things" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/02/10/Undoing-Things/" class="article-date">
+  <time class="dt-published" datetime="2022-02-10T08:21:33.000Z" itemprop="datePublished">2022-02-10</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2022/02/10/Undoing-Things/">Undoing Things</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h2 id="Redo-Commit-git-commit-amend"><a href="#Redo-Commit-git-commit-amend" class="headerlink" title="Redo Commit: git commit --amend"></a>Redo Commit: <code>git commit --amend</code></h2><p>How to redo <strong>the last</strong> commit?</p>
+<ol>
+<li>Make changes in the working directory.</li>
+<li>Stage the changes.</li>
+<li>Commit again using <code>git commit --amend</code>.</li>
+</ol>
+<p><code>git commit --amend</code> will:</p>
+<ol>
+<li>Take the changes in the staging area and add it to the last commit.</li>
+<li>Fire up the commit-message editor of the last commit for you to overwrite with a improved commit message.</li>
+</ol>
+<h2 id="Unstage-a-Staged-File"><a href="#Unstage-a-Staged-File" class="headerlink" title="Unstage a Staged File"></a>Unstage a Staged File</h2><ul>
+<li><code>git reset HEAD &lt;file&gt;</code></li>
+<li><code>git restore --staged &lt;file&gt;</code> (Git version above 2.23.0)</li>
+</ul>
+<h2 id="Unmodify-a-Modified-File"><a href="#Unmodify-a-Modified-File" class="headerlink" title="Unmodify a Modified File:"></a>Unmodify a Modified File:</h2><p>Revert <file> back to what it looked like in the last commit.</p>
+<ul>
+<li><code>git checkout -- &lt;file&gt;</code></li>
+<li><code>git restore &lt;file&gt;</code> (Git version above 2.23.0)</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://zhuyuxi333.github.io/2022/02/10/Undoing-Things/" data-id="ckzgprd0j0000ln1s9th72a3l" data-title="Undoing Things" class="article-share-link">分享</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/git/" rel="tag">git</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-git-log" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2022/02/07/git-log/" class="article-date">
@@ -222,7 +282,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhuyuxi333.github.io/2022/02/07/git-log/" data-id="ckzgds8ld00004r1sf5ge89a1" data-title="Viewing the Commit History (git log)" class="article-share-link">分享</a>
+      <a data-url="https://zhuyuxi333.github.io/2022/02/07/git-log/" data-id="ckzgprd0n0003ln1s9sek20p0" data-title="Viewing the Commit History (git log)" class="article-share-link">分享</a>
       
       
       
@@ -279,6 +339,10 @@
     <h3 class="widget-title">最新文章</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2022/02/10/Undoing-Things/">Undoing Things</a>
+          </li>
         
           <li>
             <a href="/2022/02/07/git-log/">Viewing the Commit History (git log)</a>

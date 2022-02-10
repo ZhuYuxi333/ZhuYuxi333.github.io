@@ -4,14 +4,19 @@
   <meta charset="utf-8">
   
   
-  <title>标签: git | Zhu Yuxi</title>
+  <title>Undoing Things | Zhu Yuxi</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Zhu Yuxi">
-<meta property="og:url" content="https://zhuyuxi333.github.io/tags/git/index.html">
+  <meta name="description" content="Redo Commit: git commit --amendHow to redo the last commit?  Make changes in the working directory. Stage the changes. Commit again using git commit --amend.  git commit --amend will:  Take the change">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Undoing Things">
+<meta property="og:url" content="https://zhuyuxi333.github.io/2022/02/10/Undoing-Things/index.html">
 <meta property="og:site_name" content="Zhu Yuxi">
+<meta property="og:description" content="Redo Commit: git commit --amendHow to redo the last commit?  Make changes in the working directory. Stage the changes. Commit again using git commit --amend.  git commit --amend will:  Take the change">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2022-02-10T08:21:33.000Z">
+<meta property="article:modified_time" content="2022-02-10T08:22:43.873Z">
 <meta property="article:author" content="Zhu Yuxi">
+<meta property="article:tag" content="git">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternate" href="/atom.xml" title="Zhu Yuxi" type="application/atom+xml">
@@ -69,58 +74,74 @@
 </header>
 
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2022" class="archive-year">2022</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2022/02/10/Undoing-Things/" class="archive-article-date">
-  <time class="dt-published" datetime="2022-02-10T08:21:33.000Z" itemprop="datePublished">2月 10</time>
+        <section id="main"><article id="post-Undoing-Things" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/02/10/Undoing-Things/" class="article-date">
+  <time class="dt-published" datetime="2022-02-10T08:21:33.000Z" itemprop="datePublished">2022-02-10</time>
 </a>
-      
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2022/02/10/Undoing-Things/">Undoing Things</a>
+    <h1 class="p-name article-title" itemprop="headline name">
+      Undoing Things
     </h1>
   
 
-    </header>
-  </div>
-</article>
-  
+      </header>
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2022/02/07/git-log/" class="archive-article-date">
-  <time class="dt-published" datetime="2022-02-07T07:38:35.000Z" itemprop="datePublished">2月 7</time>
-</a>
+    <div class="e-content article-entry" itemprop="articleBody">
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2022/02/07/git-log/">Viewing the Commit History (git log)</a>
-    </h1>
-  
+        <h2 id="Redo-Commit-git-commit-amend"><a href="#Redo-Commit-git-commit-amend" class="headerlink" title="Redo Commit: git commit --amend"></a>Redo Commit: <code>git commit --amend</code></h2><p>How to redo <strong>the last</strong> commit?</p>
+<ol>
+<li>Make changes in the working directory.</li>
+<li>Stage the changes.</li>
+<li>Commit again using <code>git commit --amend</code>.</li>
+</ol>
+<p><code>git commit --amend</code> will:</p>
+<ol>
+<li>Take the changes in the staging area and add it to the last commit.</li>
+<li>Fire up the commit-message editor of the last commit for you to overwrite with a improved commit message.</li>
+</ol>
+<h2 id="Unstage-a-Staged-File"><a href="#Unstage-a-Staged-File" class="headerlink" title="Unstage a Staged File"></a>Unstage a Staged File</h2><ul>
+<li><code>git reset HEAD &lt;file&gt;</code></li>
+<li><code>git restore --staged &lt;file&gt;</code> (Git version above 2.23.0)</li>
+</ul>
+<h2 id="Unmodify-a-Modified-File"><a href="#Unmodify-a-Modified-File" class="headerlink" title="Unmodify a Modified File:"></a>Unmodify a Modified File:</h2><p>Revert <file> back to what it looked like in the last commit.</p>
+<ul>
+<li><code>git checkout -- &lt;file&gt;</code></li>
+<li><code>git restore &lt;file&gt;</code> (Git version above 2.23.0)</li>
+</ul>
 
-    </header>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://zhuyuxi333.github.io/2022/02/10/Undoing-Things/" data-id="ckzgprd0j0000ln1s9th72a3l" data-title="Undoing Things" class="article-share-link">分享</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/git/" rel="tag">git</a></li></ul>
+
+    </footer>
   </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2022/02/07/git-log/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">后一篇</strong>
+      <div class="article-nav-title">Viewing the Commit History (git log)</div>
+    </a>
+  
+</nav>
+
+  
 </article>
-  
-  
-    </div></section>
-  
 
 
 </section>
