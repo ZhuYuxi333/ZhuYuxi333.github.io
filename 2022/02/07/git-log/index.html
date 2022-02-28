@@ -6,15 +6,15 @@
   
   <title>Viewing the Commit History (git log) | Zhu Yuxi</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="git log: Lists the commit history in reverse chronological order(时间倒序). For each commit:  Commit hash Author name and Author email Author date Commit message  Example: 12345commit ca82a6dff817ec66f443">
+  <meta name="description" content="[Abstract]We can use git log command to view the commit history in a Git repository.We can also add some additional options to specify the log format (such as --pretty&#x3D;oneline and --pretty-format) or">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Viewing the Commit History (git log)">
 <meta property="og:url" content="https://zhuyuxi333.github.io/2022/02/07/git-log/index.html">
 <meta property="og:site_name" content="Zhu Yuxi">
-<meta property="og:description" content="git log: Lists the commit history in reverse chronological order(时间倒序). For each commit:  Commit hash Author name and Author email Author date Commit message  Example: 12345commit ca82a6dff817ec66f443">
+<meta property="og:description" content="[Abstract]We can use git log command to view the commit history in a Git repository.We can also add some additional options to specify the log format (such as --pretty&#x3D;oneline and --pretty-format) or">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-02-07T07:38:35.000Z">
-<meta property="article:modified_time" content="2022-02-10T02:47:29.125Z">
+<meta property="article:modified_time" content="2022-02-11T08:35:32.439Z">
 <meta property="article:author" content="Zhu Yuxi">
 <meta property="article:tag" content="git">
 <meta name="twitter:card" content="summary">
@@ -80,6 +80,10 @@
   <time class="dt-published" datetime="2022-02-07T07:38:35.000Z" itemprop="datePublished">2022-02-07</time>
 </a>
     
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/git/">git</a>
+  </div>
+
   </div>
   <div class="article-inner">
     
@@ -96,7 +100,49 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p><code>git log</code>: Lists the commit history in reverse chronological order(时间倒序).</p>
+        <p><strong>[Abstract]</strong><br>We can use <code>git log</code> command to view the commit history in a Git repository.<br>We can also add some additional options to specify the log format (such as <code>--pretty=oneline</code> and <code>--pretty-format</code>) or filter the commit entry (such as <code>-&lt;n&gt;</code>).</p>
+<span id="more"></span>
+
+<h1><span id="contents">Contents</span></h1><!-- toc -->
+
+<ul>
+<li><a href="#git-log"><code>git log</code></a></li>
+<li><a href="#options">Options</a><ul>
+<li><a href="#-p-patch"><code>-p</code>&#x2F;<code>-patch</code></a></li>
+<li><a href="#-stat"><code>-stat</code></a></li>
+<li><a href="#format-options-pretty">Format Options: <code>--pretty</code></a><ul>
+<li><a href="#option-value">Option Value</a><ul>
+<li><a href="#prebuilt-format">Prebuilt Format</a><ul>
+<li><a href="#-prettyoneline"><code>--pretty=oneline</code></a></li>
+</ul>
+</li>
+<li><a href="#self-defined-format-prettyformat">Self-defined Format: <code>--pretty=format</code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#limit-options">Limit Options</a><ul>
+<li><a href="#number-limit-n">Number Limit: <code>-&lt;n&gt;</code></a></li>
+<li><a href="#time-limit">Time Limit</a><ul>
+<li><a href="#option-value-a-specified-date">Option Value: a specified date</a></li>
+</ul>
+</li>
+<li><a href="#filter">Filter</a><ul>
+<li><a href="#-authorpattern-committerpattern"><code>--author=&lt;pattern&gt;</code>, <code>--committer=&lt;pattern&gt;</code></a></li>
+<li><a href="#-greppattern"><code>--grep=&lt;pattern&gt;</code></a></li>
+<li><a href="#-s-string"><code>-S &lt;string&gt;</code></a></li>
+<li><a href="#-path"><code>-- &lt;path&gt;</code></a></li>
+<li><a href="#-no-merges"><code>--no-merges</code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<!-- tocstop -->
+
+<h1><span id="git-log"><code>git log</code></span></h1><p><code>git log</code>: Lists the commit history in reverse chronological order(时间倒序).</p>
 <p>For each commit:</p>
 <ol>
 <li>Commit hash</li>
@@ -107,7 +153,7 @@
 <p>Example:</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">commit ca82a6dff817ec66f44342007202690a93763949</span><br><span class="line">Author: Scott Chacon &lt;schacon@gmail.com&gt;</span><br><span class="line">Date:   Mon Mar 17 21:52:11 2008 -0700</span><br><span class="line"></span><br><span class="line">    changed the verison number</span><br></pre></td></tr></table></figure>
 
-<h1 id="Options"><a href="#Options" class="headerlink" title="Options"></a>Options</h1><h2 id="p-x2F-patch"><a href="#p-x2F-patch" class="headerlink" title="-p&#x2F;-patch"></a><code>-p</code>&#x2F;<code>-patch</code></h2><p>Show the difference introduced in each commit in addation to the information shown in <code>git log</code>.</p>
+<h1><span id="options">Options</span></h1><h2><span id="-px2f-patch"><code>-p</code>&#x2F;<code>-patch</code></span></h2><p>Show the difference introduced in each commit in addation to the information shown in <code>git log</code>.</p>
 <p>For each commit:</p>
 <ol>
 <li>Commit hash</li>
@@ -119,7 +165,7 @@
 <p>Example:</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">commit ca82a6dff817ec66f44342007202690a93763949</span><br><span class="line">Author: Scott Chacon &lt;schacon@gmail.com&gt;</span><br><span class="line">Date:   Mon Mar 17 21:52:11 2008 -0700</span><br><span class="line"></span><br><span class="line">    changed the verison number</span><br><span class="line"></span><br><span class="line">diff --git a/Rakefile b/Rakefile</span><br><span class="line">index a874b73..8f94139 100644</span><br><span class="line">--- a/Rakefile</span><br><span class="line">+++ b/Rakefile</span><br><span class="line">@@ -5,7 +5,7 @@ require &#x27;rake/gempackagetask&#x27;</span><br><span class="line"> spec = Gem::Specification.new do |s|</span><br><span class="line">     s.platform  =   Gem::Platform::RUBY</span><br><span class="line">     s.name      =   &quot;simplegit&quot;</span><br><span class="line">-    s.version   =   &quot;0.1.0&quot;</span><br><span class="line">+    s.version   =   &quot;0.1.1&quot;</span><br><span class="line">     s.author    =   &quot;Scott Chacon&quot;</span><br><span class="line">     s.email     =   &quot;schacon@gmail.com&quot;</span><br><span class="line">     s.summary   =   &quot;A simple gem for using Git in Ruby code.&quot;</span><br></pre></td></tr></table></figure>
 
-<h2 id="stat"><a href="#stat" class="headerlink" title="-stat"></a><code>-stat</code></h2><p>Show some abbreviated stats(统计数据) for each commit in addation to the message shown in <code>git log</code>.</p>
+<h2><span id="-stat"><code>-stat</code></span></h2><p>Show some abbreviated stats(统计数据) for each commit in addation to the message shown in <code>git log</code>.</p>
 <p>For each commit:<br>(insertion and deletion is talking about lines added and removes)</p>
 <ol>
 <li>A list of modified files, each list entry (“Rakefile | 2 +-“ for example) shows:</li>
@@ -141,9 +187,9 @@
 <p>Example:</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">commit ca82a6dff817ec66f44342007202690a93763949</span><br><span class="line">Author: Scott Chacon &lt;schacon@gmail.com&gt;</span><br><span class="line">Date:   Mon Mar 17 21:52:11 2008 -0700</span><br><span class="line"></span><br><span class="line">    changed the verison number</span><br><span class="line"></span><br><span class="line"> Rakefile | 2 +-</span><br><span class="line"> 1 file changed, 1 insertion(+), 1 deletion(-)</span><br></pre></td></tr></table></figure>
 
-<h2 id="Format-Options-pretty"><a href="#Format-Options-pretty" class="headerlink" title="Format Options: --pretty"></a>Format Options: <code>--pretty</code></h2><p>format options: options that let you format the log output</p>
-<h3 id="Option-Value"><a href="#Option-Value" class="headerlink" title="Option Value"></a>Option Value</h3><h4 id="Prebuilt-Format"><a href="#Prebuilt-Format" class="headerlink" title="Prebuilt Format"></a>Prebuilt Format</h4><p>There are four prebuilt values for <code>--pretty</code> option(“oneline”, “short”, “full” and “fuller”).</p>
-<h5 id="pretty-oneline"><a href="#pretty-oneline" class="headerlink" title="--pretty=oneline"></a><code>--pretty=oneline</code></h5><p>For each commit:(show in oneline)</p>
+<h2><span id="format-options-pretty">Format Options: <code>--pretty</code></span></h2><p>format options: options that let you format the log output</p>
+<h3><span id="option-value">Option Value</span></h3><h4><span id="prebuilt-format">Prebuilt Format</span></h4><p>There are four prebuilt values for <code>--pretty</code> option(“oneline”, “short”, “full” and “fuller”).</p>
+<h5><span id="-prettyoneline"><code>--pretty=oneline</code></span></h5><p>For each commit:(show in oneline)</p>
 <ol>
 <li>Commit hash</li>
 <li>Commit message</li>
@@ -151,7 +197,7 @@
 <p>Example:</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ca82a6dff817ec66f44342007202690a93763949 changed the verison number</span><br></pre></td></tr></table></figure>
 
-<h4 id="Self-defined-Format-pretty-format"><a href="#Self-defined-Format-pretty-format" class="headerlink" title="Self-defined Format: --pretty=format"></a>Self-defined Format: <code>--pretty=format</code></h4><p>Example:</p>
+<h4><span id="self-defined-format-prettyformat">Self-defined Format: <code>--pretty=format</code></span></h4><p>Example:</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ git log --pretty=format:&quot;%h - %an, %ar : %s&quot;             </span><br><span class="line">ca82a6d - Scott Chacon, 14 years ago : changed the verison number</span><br><span class="line">085bb3b - Scott Chacon, 14 years ago : removed unnecessary test code</span><br><span class="line">a11bef0 - Scott Chacon, 14 years ago : first commit</span><br></pre></td></tr></table></figure>
 
 <p>Specifiers for <code>git log --pretty=format</code></p>
@@ -207,25 +253,25 @@
 <td align="left">Commit message</td>
 </tr>
 </tbody></table>
-<h2 id="Limit-Options"><a href="#Limit-Options" class="headerlink" title="Limit Options"></a>Limit Options</h2><p>limit options: options that let you show only a subset of commits</p>
-<h3 id="Number-Limit-lt-n-gt"><a href="#Number-Limit-lt-n-gt" class="headerlink" title="Number Limit: -&lt;n&gt;"></a>Number Limit: <code>-&lt;n&gt;</code></h3><p><code>-&lt;n&gt;</code>: Show only the last n commits.</p>
-<h3 id="Time-Limit"><a href="#Time-Limit" class="headerlink" title="Time Limit"></a>Time Limit</h3><p><code>--since=&lt;date&gt;</code>&#x2F;<code>--after=&lt;date&gt;</code>: Limit the commits to those made <strong>after</strong> the specified date.<br><code>--until=&lt;date&gt;</code>&#x2F;<code>--before=&lt;date&gt;</code>: Limit the commits to those made <strong>before</strong> the specified date. </p>
-<h4 id="Option-Value-a-specified-date"><a href="#Option-Value-a-specified-date" class="headerlink" title="Option Value: a specified date"></a>Option Value: a specified date</h4><p><code>--since=2.weeks</code>: List commits made in the last 2 weeks.<br><code>--since=2.years</code>: List commits made in the last 2 years.<br><code>--since=&quot;2008-01-15&quot;</code>: List commits made after 2008-01-15.<br><code>--since=&quot;2 years 1 day 3 minutes ago&quot;</code>: List commits made in the last 2 years, 1 day and 3 minutes.</p>
-<h3 id="Filter"><a href="#Filter" class="headerlink" title="Filter"></a>Filter</h3><h4 id="author-lt-pattern-gt-committer-lt-pattern-gt"><a href="#author-lt-pattern-gt-committer-lt-pattern-gt" class="headerlink" title="--author=&lt;pattern&gt;, --committer=&lt;pattern&gt;"></a><code>--author=&lt;pattern&gt;</code>, <code>--committer=&lt;pattern&gt;</code></h4><p>List commits whose author&#x2F;commiter matches the specified pattern. </p>
+<h2><span id="limit-options">Limit Options</span></h2><p>limit options: options that let you show only a subset of commits</p>
+<h3><span id="number-limit-ltngt">Number Limit: <code>-&lt;n&gt;</code></span></h3><p><code>-&lt;n&gt;</code>: Show only the last n commits.</p>
+<h3><span id="time-limit">Time Limit</span></h3><p><code>--since=&lt;date&gt;</code>&#x2F;<code>--after=&lt;date&gt;</code>: Limit the commits to those made <strong>after</strong> the specified date.<br><code>--until=&lt;date&gt;</code>&#x2F;<code>--before=&lt;date&gt;</code>: Limit the commits to those made <strong>before</strong> the specified date. </p>
+<h4><span id="option-value-a-specified-date">Option Value: a specified date</span></h4><p><code>--since=2.weeks</code>: List commits made in the last 2 weeks.<br><code>--since=2.years</code>: List commits made in the last 2 years.<br><code>--since=&quot;2008-01-15&quot;</code>: List commits made after 2008-01-15.<br><code>--since=&quot;2 years 1 day 3 minutes ago&quot;</code>: List commits made in the last 2 years, 1 day and 3 minutes.</p>
+<h3><span id="filter">Filter</span></h3><h4><span id="-authorltpatterngt-committerltpatterngt"><code>--author=&lt;pattern&gt;</code>, <code>--committer=&lt;pattern&gt;</code></span></h4><p>List commits whose author&#x2F;commiter matches the specified pattern. </p>
 <p>With more than one <code>--author=&lt;pattern&gt;</code>, list commits whose author&#x2F;committer <strong>matches any</strong> of the given patterns.</p>
-<h4 id="grep-lt-pattern-gt"><a href="#grep-lt-pattern-gt" class="headerlink" title="--grep=&lt;pattern&gt;"></a><code>--grep=&lt;pattern&gt;</code></h4><p>List commits whose commit message matches the specified pattern. </p>
+<h4><span id="-grepltpatterngt"><code>--grep=&lt;pattern&gt;</code></span></h4><p>List commits whose commit message matches the specified pattern. </p>
 <p>With more than one <code>--grep=&lt;pattern&gt;</code>, list commits whose commit message <strong>matches any</strong> of the given patterns. </p>
 <p>Add a <code>--all-match</code> option after a series of <code>--grep=&lt;pattern&gt;</code> will list commits whose commit message <strong>matches all</strong> of the given patterns.</p>
-<h4 id="S-lt-string-gt"><a href="#S-lt-string-gt" class="headerlink" title="-S &lt;string&gt;"></a><code>-S &lt;string&gt;</code></h4><p>List commits that has added or removed this string. </p>
+<h4><span id="-s-ltstringgt"><code>-S &lt;string&gt;</code></span></h4><p>List commits that has added or removed this string. </p>
 <p>For example: <code>-S function_name</code> shows commits that has removed a reference of a specific function.</p>
-<h4 id="lt-path-gt"><a href="#lt-path-gt" class="headerlink" title="-- &lt;path&gt;"></a><code>-- &lt;path&gt;</code></h4><p>List commits that has changed a specific file or directory. </p>
+<h4><span id="-ltpathgt"><code>-- &lt;path&gt;</code></span></h4><p>List commits that has changed a specific file or directory. </p>
 <p>This option is always the last option of a command.</p>
-<h4 id="no-merges"><a href="#no-merges" class="headerlink" title="--no-merges"></a><code>--no-merges</code></h4><p>List commits that are not merge commits.</p>
+<h4><span id="-no-merges"><code>--no-merges</code></span></h4><p>List commits that are not merge commits.</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhuyuxi333.github.io/2022/02/07/git-log/" data-id="ckzgr95vk0003pz1s059adau9" data-title="Viewing the Commit History (git log)" class="article-share-link">分享</a>
+      <a data-url="https://zhuyuxi333.github.io/2022/02/07/git-log/" data-id="cl063imtu0004ja1s116bc0zf" data-title="Viewing the Commit History (git log)" class="article-share-link">分享</a>
       
       
       
@@ -258,13 +304,20 @@
           <aside id="sidebar">
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title">分类</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/git/">git</a></li></ul>
+    </div>
+  </div>
+
 
   
     
   <div class="widget-wrap">
     <h3 class="widget-title">标签</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/git/" rel="tag">git</a></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/git/" rel="tag">git</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vue/" rel="tag">vue</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA-mac/" rel="tag">环境搭建 - mac</a></li></ul>
     </div>
   </div>
 
@@ -274,7 +327,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">标签云</h3>
     <div class="widget tagcloud">
-      <a href="/tags/git/" style="font-size: 10px;">git</a>
+      <a href="/tags/git/" style="font-size: 20px;">git</a> <a href="/tags/vue/" style="font-size: 10px;">vue</a> <a href="/tags/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA-mac/" style="font-size: 10px;">环境搭建 - mac</a>
     </div>
   </div>
 
@@ -294,6 +347,10 @@
     <h3 class="widget-title">最新文章</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2022/02/28/Mac-%E5%AE%89%E8%A3%85Vue-%E5%88%9B%E5%BB%BA%E7%AC%AC%E4%B8%80%E4%B8%AAvue%E9%A1%B9%E7%9B%AE/">在Mac系统中安装Vue并创建第一个vue项目</a>
+          </li>
         
           <li>
             <a href="/2022/02/10/Remote-Repository/">Remote Repository</a>
