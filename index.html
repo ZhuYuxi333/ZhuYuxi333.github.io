@@ -93,198 +93,20 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p>目录：</p>
-<!--toc-->
-
-<h1><span id="html基础">HTML基础</span></h1><p>参考教程：<a href>https://www.runoob.com/html/html-tutorial.html</a><br>速查列表：<a href>https://www.runoob.com/html/html-quicklist.html</a></p>
-<h2><span id="1-入门实例">1. 入门实例</span></h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">    &lt;head&gt;</span><br><span class="line">    &lt;meta charset=&quot;utf-8&quot;&gt;</span><br><span class="line">    &lt;title&gt;ZONGXP&lt;/title&gt;</span><br><span class="line">    &lt;/head&gt;</span><br><span class="line">    </span><br><span class="line">    &lt;body&gt;</span><br><span class="line">     </span><br><span class="line">        &lt;h1&gt;我的第一个标题&lt;/h1&gt;</span><br><span class="line">        &lt;p&gt;我的第一个段落。&lt;/p&gt;</span><br><span class="line">     </span><br><span class="line">    &lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
-<p>其中：</p>
-<ul>
-<li><code>&lt;!DOCTYPE html&gt;</code>声明为HTML5文档</li>
-<li><code>&lt;html&gt;</code>元素是HTML页面的根元素</li>
-<li><code>&lt;head&gt;</code>元素包含了文档的元（meta）数据，比如：<ul>
-<li><code>&lt;meta charset=&quot;utf-8&quot;&gt;</code>定义网页编码格式为utf-8（解决中文乱码问题）</li>
-<li><code>&lt;title&gt;</code>元素描述了文档的标题</li>
-</ul>
-</li>
-<li><code>&lt;body&gt;</code>元素包含了可见的页面内容</li>
-<li><code>&lt;h1&gt;</code>元素定义了一个大标题</li>
-<li><code>&lt;p&gt;</code>元素定义了一个段落<br>保存后用浏览器打开可以看到如下页面：</li>
-</ul>
-<p><img src="/images/html_hello_world.png"></p>
-<h2><span id="2-各部分详解">2. 各部分详解</span></h2><h3><span id="21-标题">2.1 标题</span></h3><p>HTML标题（heading）是通过<code>&lt;h1&gt;</code> ~ <code>&lt;h6&gt;</code>标签来定义的。</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">    &lt;head&gt;</span><br><span class="line">        &lt;meta charset=&quot;utf-8&quot;&gt;</span><br><span class="line">        &lt;title&gt;ZONGXP&lt;/title&gt;</span><br><span class="line">    &lt;/head&gt;</span><br><span class="line">    </span><br><span class="line">    &lt;body&gt;</span><br><span class="line">    </span><br><span class="line">        &lt;h1&gt;这是标题 1&lt;/h1&gt;</span><br><span class="line">        &lt;h2&gt;这是标题 2&lt;/h2&gt;</span><br><span class="line">        &lt;h3&gt;这是标题 3&lt;/h3&gt;</span><br><span class="line">        &lt;h4&gt;这是标题 4&lt;/h4&gt;</span><br><span class="line">        &lt;h5&gt;这是标题 5&lt;/h5&gt;</span><br><span class="line">        &lt;h6&gt;这是标题 6&lt;/h6&gt;</span><br><span class="line">    </span><br><span class="line">    &lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
-<p><img src="/images/html_heading.png"></p>
-<h3><span id="22-段落">2.2 段落</span></h3><p>HTML段落（paragraph）是通过标签<code>&lt;p&gt;</code>来定义的。</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">    &lt;head&gt;</span><br><span class="line">        &lt;meta charset=&quot;utf-8&quot;&gt;</span><br><span class="line">        &lt;title&gt;ZONGXP&lt;/title&gt;</span><br><span class="line">    &lt;/head&gt;</span><br><span class="line"></span><br><span class="line">    &lt;body&gt;</span><br><span class="line">    </span><br><span class="line">        &lt;p&gt;这是一个段落。&lt;/p&gt;</span><br><span class="line">        &lt;p&gt;这是一个段落。&lt;/p&gt;</span><br><span class="line">        &lt;p&gt;这是一个段落。&lt;/p&gt;</span><br><span class="line">    </span><br><span class="line">    &lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
-
-<h3><span id="23-链接">2.3 链接</span></h3><p>HTML链接是通过标签<code>&lt;a&gt;</code>来定义的。</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">    &lt;head&gt;</span><br><span class="line">        &lt;meta charset=&quot;utf-8&quot;&gt;</span><br><span class="line">        &lt;title&gt;ZONGXP&lt;/title&gt;</span><br><span class="line">    &lt;/head&gt;</span><br><span class="line"></span><br><span class="line">    &lt;body&gt;</span><br><span class="line">    </span><br><span class="line">        &lt;a href=&quot;https://zhuyuxi333.github.io/&quot;&gt;这是一个链接使用了 href 属性&lt;/a&gt;</span><br><span class="line">    </span><br><span class="line">    &lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
-
-<h3><span id="24-图像">2.4 图像</span></h3><p>HTML图像（image）是通过标签 <code>&lt;img&gt;</code> 来定义的。注意： 图像的名称和尺寸是以属性的形式提供的。</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">    &lt;head&gt;</span><br><span class="line">        &lt;meta charset=&quot;utf-8&quot;&gt;</span><br><span class="line">        &lt;title&gt;ZONGXP&lt;/title&gt;</span><br><span class="line">    &lt;/head&gt;</span><br><span class="line"></span><br><span class="line">    &lt;body&gt;</span><br><span class="line">    </span><br><span class="line">        &lt;img src=&quot;zhuyuxi_blog.png&quot; width=&quot;640&quot; height=&quot;640&quot; /&gt;</span><br><span class="line">    </span><br><span class="line">    &lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
-
-<h3><span id="25-表格">2.5 表格</span></h3><p>HTML表格通过<code>&lt;table&gt;</code>标签来定义：</p>
-<ul>
-<li>每一个表格包含若干行，每一行由一对<code>&lt;tr&gt;</code>标签(table row)定义</li>
-<li>表格中的每一行又分为若干单元格，其中：<ul>
-<li>每一个表头单元格由一对<code>&lt;th&gt;</code>标签(table head)定义</li>
-<li>每一个数据单元格由一对<code>&lt;td&gt;</code>标签(table data)定义，数据单元格可以包含文本、图片、列表、段落、表单、水平线、表格等等。</li>
-</ul>
-</li>
-<li>表格边框：如果不定义边框属性，表格将不显示边框。如果希望显示边框，需要定义表格的边框属性的属性值为1：<code>&lt;table border=&quot;1&quot;&gt; ... &lt;/table&gt;</code>。<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">    &lt;head&gt;</span><br><span class="line">        &lt;meta charset=&quot;utf-8&quot;&gt;</span><br><span class="line">        &lt;title&gt;ZONGXP&lt;/title&gt;</span><br><span class="line">    &lt;/head&gt;</span><br><span class="line"></span><br><span class="line">    &lt;body&gt;</span><br><span class="line">    </span><br><span class="line">        &lt;table border=&quot;1&quot;&gt;</span><br><span class="line">            &lt;tr&gt;</span><br><span class="line">                &lt;th&gt;Header 1&lt;/th&gt;</span><br><span class="line">                &lt;th&gt;Header 2&lt;/th&gt;</span><br><span class="line">            &lt;/tr&gt;</span><br><span class="line">            &lt;tr&gt;</span><br><span class="line">                &lt;td&gt;row 1, cell 1&lt;/td&gt;</span><br><span class="line">                &lt;td&gt;row 1, cell 2&lt;/td&gt;</span><br><span class="line">            &lt;/tr&gt;</span><br><span class="line">            &lt;tr&gt;</span><br><span class="line">                &lt;td&gt;row 2, cell 1&lt;/td&gt;</span><br><span class="line">                &lt;td&gt;row 2, cell 2&lt;/td&gt;</span><br><span class="line">            &lt;/tr&gt;</span><br><span class="line">        &lt;/table&gt;</span><br><span class="line">    </span><br><span class="line">    &lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
-<img src="/images/html_table.png"></li>
-</ul>
-<h3><span id="26-区块">2.6 区块</span></h3><p>块级元素和内联元素：</p>
-<ul>
-<li>块级元素：在浏览器中显示时，通常会以新行来开始（和结束）。比如：<code>&lt;h1&gt;</code>, <code>&lt;p&gt;</code>, <code>&lt;ul&gt;</code>, <code>&lt;table&gt;</code>。</li>
-<li>内联元素：在浏览器中显示时，通常不会以新行开始。比如：<code>&lt;b&gt;</code>, <code>&lt;td&gt;</code>, <code>&lt;a&gt;</code>, <code>img</code>。</li>
-</ul>
-<h4><span id="ltdivgt标签"><code>&lt;div&gt;</code>标签</span></h4><p><code>&lt;div&gt;</code>标签用于组合块级元素，以便通过 CSS 来对这些元素设置样式。</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">    &lt;head&gt;</span><br><span class="line">        &lt;meta charset=&quot;utf-8&quot;&gt;</span><br><span class="line">        &lt;title&gt;ZONGXP&lt;/title&gt;</span><br><span class="line">    &lt;/head&gt;</span><br><span class="line"></span><br><span class="line">    &lt;body&gt;</span><br><span class="line">    </span><br><span class="line">        &lt;div style=&quot;color:#0000FF&quot;&gt;</span><br><span class="line">            &lt;h3&gt;这是一个在 div 元素中的标题。&lt;/h3&gt;</span><br><span class="line">            &lt;p&gt;这是一个在 div 元素中的文本。&lt;/p&gt;</span><br><span class="line">        &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">        &lt;h3&gt;这是一个在 div 元素之外的标题。&lt;/h3&gt;</span><br><span class="line">        &lt;p&gt;这是一个在 div 元素之外的文本。&lt;/p&gt;</span><br><span class="line">    </span><br><span class="line">    &lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
-<p><img src="/images/html_div_example.png"><br>在网页设计中经常使用<code>&lt;div&gt;</code>标签和CSS来对网页进行布局：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">    &lt;head&gt;</span><br><span class="line">        &lt;meta charset=&quot;utf-8&quot;&gt;</span><br><span class="line">        &lt;title&gt;ZONGXP&lt;/title&gt;</span><br><span class="line">    &lt;/head&gt;</span><br><span class="line"></span><br><span class="line">    &lt;body&gt;</span><br><span class="line">    </span><br><span class="line">        &lt;div id=&quot;container&quot; style=&quot;width:500px&quot;&gt;</span><br><span class="line"> </span><br><span class="line">            &lt;div id=&quot;header&quot; style=&quot;background-color:#FFA500;&quot;&gt;</span><br><span class="line">                &lt;h1 style=&quot;margin-bottom:0;&quot;&gt;主要的网页标题&lt;/h1&gt;</span><br><span class="line">            &lt;/div&gt;</span><br><span class="line">             </span><br><span class="line">            &lt;div id=&quot;menu&quot; style=&quot;background-color:#FFD700;height:200px;width:100px;float:left;&quot;&gt;</span><br><span class="line">                &lt;b&gt;菜单&lt;/b&gt;&lt;br&gt;</span><br><span class="line">                HTML&lt;br&gt;</span><br><span class="line">                CSS&lt;br&gt;</span><br><span class="line">                JavaScript</span><br><span class="line">            &lt;/div&gt;</span><br><span class="line">             </span><br><span class="line">            &lt;div id=&quot;content&quot; style=&quot;background-color:#EEEEEE;height:200px;width:400px;float:left;&quot;&gt;内容在这里&lt;/div&gt;</span><br><span class="line">             </span><br><span class="line">            &lt;div id=&quot;footer&quot; style=&quot;background-color:#FFA500;clear:both;text-align:center;&quot;&gt;版权 © runoob.com&lt;/div&gt;</span><br><span class="line">             </span><br><span class="line">            &lt;/div&gt; </span><br><span class="line">    </span><br><span class="line">    &lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
-<p><img src="/images/html_layout_example.png"></p>
-<h4><span id="ltspangt标签"><code>&lt;span&gt;</code>标签</span></h4><p><code>&lt;span&gt;</code>标签用于组合行内元素，被 <span> 元素包含的文本，可以使用 CSS 对它定义样式，或者使用 JavaScript 对它进行操作。</span></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">    &lt;head&gt;</span><br><span class="line">        &lt;meta charset=&quot;utf-8&quot;&gt;</span><br><span class="line">        &lt;title&gt;ZONGXP&lt;/title&gt;</span><br><span class="line">    &lt;/head&gt;</span><br><span class="line"></span><br><span class="line">    &lt;body&gt;</span><br><span class="line">    </span><br><span class="line">        &lt;p&gt;我的母亲有 &lt;span style=&quot;color:blue&quot;&gt;蓝色&lt;/span&gt; 的眼睛。&lt;/p&gt; </span><br><span class="line">    </span><br><span class="line">    &lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
-<p><img src="/images/html_span_example.png"></p>
-<h3><span id="27-表单">2.7 表单</span></h3><p>HTML表单用于收集用户的输入，表单使用<code>&lt;form&gt;</code>标签来定义。</p>
-<p>表单中可以包含若干表单元素，表单元素允许用户在表单中输入内容。输入元素使用标签<code>&lt;input&gt;</code>来定义，类型属性(type)决定输入类型。</p>
-<h4><span id="文本域-密码字段-单选按钮-复选框">文本域、密码字段、单选按钮、复选框</span></h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">    &lt;head&gt;</span><br><span class="line">        &lt;meta charset=&quot;utf-8&quot;&gt;</span><br><span class="line">        &lt;title&gt;ZONGXP&lt;/title&gt;</span><br><span class="line">    &lt;/head&gt;</span><br><span class="line"></span><br><span class="line">    &lt;body&gt;</span><br><span class="line">    </span><br><span class="line">        &lt;form&gt;</span><br><span class="line">            &lt;p&gt;文本域（Text Fields）：&lt;/p&gt;</span><br><span class="line">            First name: &lt;input type=&quot;text&quot; name=&quot;firstname&quot;&gt;&lt;br&gt;</span><br><span class="line">            Last name: &lt;input type=&quot;text&quot; name=&quot;lastname&quot;&gt;</span><br><span class="line">            &lt;p&gt;密码字段：&lt;/p&gt;</span><br><span class="line">            Password: &lt;input type=&quot;password&quot; name=&quot;pwd&quot;&gt;</span><br><span class="line">            &lt;p&gt;单选按钮（Radio Buttons）：&lt;/p&gt;</span><br><span class="line">            &lt;input type=&quot;radio&quot; name=&quot;sex&quot; value=&quot;male&quot;&gt;Male</span><br><span class="line">            &lt;input type=&quot;radio&quot; name=&quot;sex&quot; value=&quot;female&quot;&gt;Female</span><br><span class="line">            &lt;p&gt;复选框（Checkboxes）&lt;/p&gt;</span><br><span class="line">            &lt;input type=&quot;checkbox&quot; name=&quot;vehicle&quot; value=&quot;Bike&quot;&gt;I have a bike&lt;br&gt;</span><br><span class="line">            &lt;input type=&quot;checkbox&quot; name=&quot;vehicle&quot; value=&quot;Car&quot;&gt;I have a car</span><br><span class="line">        &lt;/form&gt; </span><br><span class="line">    </span><br><span class="line">    &lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
-<p><img src="/images/html_form_example.png"></p>
-<h4><span id="提交按钮submit-button">提交按钮（Submit Button）</span></h4><p><code>&lt;input type=&quot;submit&quot;&gt;</code> 定义了提交按钮。当用户单击确认按钮时，表单的内容会被传送到另一个文件。表单的动作属性（action）定义了目的文件的文件名。由动作属性定义的这个文件通常会对接收到的输入数据进行相关的处理。</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">    &lt;head&gt;</span><br><span class="line">        &lt;meta charset=&quot;utf-8&quot;&gt;</span><br><span class="line">        &lt;title&gt;ZONGXP&lt;/title&gt;</span><br><span class="line">    &lt;/head&gt;</span><br><span class="line"></span><br><span class="line">    &lt;body&gt;</span><br><span class="line">    </span><br><span class="line">        &lt;form&gt;</span><br><span class="line">            &lt;form name=&quot;input&quot; action=&quot;html_form_action.php&quot; method=&quot;get&quot;&gt;</span><br><span class="line">                Username: &lt;input type=&quot;text&quot; name=&quot;user&quot;&gt;</span><br><span class="line">                &lt;input type=&quot;submit&quot; value=&quot;Submit&quot;&gt;</span><br><span class="line">            &lt;/form&gt;</span><br><span class="line">        &lt;/form&gt; </span><br><span class="line">    </span><br><span class="line">    &lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
-<p><img src="/images/html_form_submit_example.png"></p>
-<h1><span id="css基础">CSS基础</span></h1><p>参考教程：<a href>https://developer.mozilla.org/zh-CN/docs/Learn/Getting_started_with_the_web&#x2F;CSS_basics</a></p>
-<h2><span id="1-入门实例">1. 入门实例</span></h2><p>beginner-html-site目录结构：<br>beginner-html-site<br>    |-index.html<br>    |-images<br>        |-firefox-icon.png</p>
-<p>在浏览器中打开index.html的结果：</p>
-<p><img src="/images/css_example1.png"></p>
-<p>在该目录下创建一个styles文件夹，在其中创建一个style.css文件：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">p &#123;</span><br><span class="line">    color: red;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>然后在index.html文件中将下面的代码添加到<code>&lt;head&gt;</code>标签中，将style.css文件连接至HTML文档：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;link href=&quot;styles/style.css&quot; rel=&quot;stylesheet&quot;&gt;</span><br></pre></td></tr></table></figure>
-
-<p>在浏览器中打开index.html的结果：</p>
-<p><img src="/images/css_example2.png"></p>
-<h2><span id="2-css规则集">2. CSS规则集</span></h2><p>下面的整个结构称为“规则集”</p>
-<p><img src="/images/css-declaration.png"></p>
-<p>各部分释义如下：</p>
-<ul>
-<li>选择器（Selector）：HTML 元素的名称位于规则集开始。它选择了一个或多个需要添加样式的元素（在这个例子中就是 p 元素），如果选择器中有多个元素则不同元素之间用逗号<code>,</code>分隔。要给不同元素添加样式只需要更改选择器就行了。</li>
-<li>声明（Declaration）：对选择器的一条样式规则，由一对属性+属性值组成，每一条声明中属性与属性值用冒号<code>:</code>分隔，不同的声明用分号<code>;</code>分隔。</li>
-</ul>
-<p>另一个示例：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">p, li, h1 &#123;</span><br><span class="line">  color: red;</span><br><span class="line">  width: 500px;</span><br><span class="line">  border: 1px solid black;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2><span id="3-选择器">3. 选择器</span></h2><p>选择器有许多不同的类型。上面只介绍了元素选择器，用来选择 HTML 文档中给定的元素。但是选择操作可以更加具体。下面是一些常用的选择器类型：（更多信息请参考：<a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors">选择器</a>）</p>
-<table>
-<thead>
-<tr>
-<th>选择器名称</th>
-<th>选择的内容</th>
-<th>示例</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>元素选择器（也称作标签或类型选择器）</td>
-<td>所有指定(该)类型的 HTML 元素</td>
-<td>p</td>
-</tr>
-<tr>
-<td>选择 <code>&lt;p&gt;</code></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>ID 选择器</td>
-<td>具有特定 ID 的元素（单一 HTML 页面中，每个 ID 只对应一个元素，一个元素只对应一个 ID）</td>
-<td>#my-id</td>
-</tr>
-<tr>
-<td>选择 <code>&lt;p id=&quot;my-id&quot;&gt;</code> 或 <code>&lt;a id=&quot;my-id&quot;&gt;</code></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>类选择器</td>
-<td>具有特定类的元素（单一页面中，一个类可以有多个实例）</td>
-<td>.my-class</td>
-</tr>
-<tr>
-<td>选择 <code>&lt;p class=&quot;my-class&quot;&gt;</code> 和 <code>&lt;a class=&quot;my-class&quot;&gt;</code></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>属性选择器</td>
-<td>拥有特定属性的元素</td>
-<td>img[src]</td>
-</tr>
-<tr>
-<td>选择 <code>&lt;img src=&quot;myimage.png&quot;&gt;</code> 而不是 <code>&lt;img&gt;</code></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>伪（Pseudo）类选择器</td>
-<td>特定状态下的特定元素（比如鼠标指针悬停）</td>
-<td>a:hover</td>
-</tr>
-<tr>
-<td>仅在鼠标指针悬停在链接上时选择 <code>&lt;a&gt;</code>。</td>
-<td></td>
-<td></td>
-</tr>
-</tbody></table>
-<h2><span id="4-字体">4. 字体</span></h2><h3><span id="字体素材网址">字体素材网址</span></h3><ol>
-<li><a target="_blank" rel="noopener" href="https://fonts.google.com/">Google Fonts</a></li>
-<li><a target="_blank" rel="noopener" href="https://www.taobao.com/markets/fuwu/fontmarket_freefonts">阿里字体素材平台</a></li>
-</ol>
-<h3><span id="google-fonts的使用方法">Google Fonts的使用方法</span></h3><ol>
-<li>访问 Google Fonts 。打开右侧边栏可现实选中的字体家族。</li>
-<li>可通过 Categories（类别）、Languages（语言）、Font Properties（字体属性）过滤想要的字体。</li>
-<li>在列出的字体风格列表中，选择合适的粗细、是否倾斜等信息。</li>
-<li>在右侧边栏中可以看到 Google 给出的代码片段，将其添加到html页面的<code>&lt;head&gt;</code>标签中间就可以在CSS文件中使用了。</li>
-</ol>
-<p><img src="/images/Google_Font.gif"></p>
-<h2><span id="5-盒模型">5. 盒模型</span></h2><p>页面里大部分 HTML 元素都可以被看作若干层叠的盒子。CSS 布局主要就是基于盒模型的。每个占据页面空间的块都有这样的属性：</p>
-<ul>
-<li>padding：即内边距，围绕着内容（比如段落）的空间。</li>
-<li>border：即边框，紧接着内边距的线。</li>
-<li>margin：即外边距，围绕元素外部的空间。</li>
-</ul>
-<p><img src="/images/box-model.png"></p>
-<ul>
-<li>width ：元素的宽度</li>
-<li>background-color ：元素内容和内边距底下的颜色</li>
-<li>color ：元素内容（通常是文本）的颜色</li>
-<li>text-shadow ：为元素内的文本设置阴影</li>
-<li>display ：设置元素的显示模式（暂略）</li>
-</ul>
-<h1><span id="javascript基础">JavaScript基础</span></h1><p>参考教程：<a href>https://developer.mozilla.org/zh-CN/docs/Learn/Getting_started_with_the_web&#x2F;JavaScript_basics</a></p>
-<p>JavaScript 是一门编程语言，可为网站添加交互功能（例如：游戏、动态样式、动画以及在按下按钮或收到表单数据时做出的响应等）。</p>
-<h2><span id="hello-world">Hello World</span></h2><ol>
-<li><p>在项目目录下创建一个scripts文件夹，用于存放所有的javascript文件。</p>
-</li>
-<li><p>在scripts文件夹下创建一个main.js文件，并在index.html页面的<code>&lt;/body&gt;</code>标签之前(<strong>注意：是<code>&lt;/body&gt;</code>而不是<code>&lt;body&gt;</code></strong>)添加如下代码，将 JavaScript 引入页面以作用于 HTML（以及 CSS 等页面上所有内容）：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;script src=&quot;scripts/main.js&quot; defer&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure>
-<p>将 <code>&lt;script&gt;</code> 放在HTML文件的底部附近的原因是浏览器会按照代码在文件中的顺序加载 HTML。如果先加载的 JavaScript 期望修改其下方的 HTML，那么它可能由于 HTML 尚未被加载而失效。因此，将 JavaScript 代码放在 HTML页面的底部附近通常是最好的策略。</p>
-</li>
-<li><p>将下列代码添加到main.js文件中：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">let myHeading = document.querySelector(&#x27;h1&#x27;);</span><br><span class="line">myHeading.textContent = &#x27;Hello world!&#x27;;</span><br></pre></td></tr></table></figure>
-<p>这段代码的作用是：将页面的标题修改为”Hello World!”。<br>首先，通过querySelector()函数获取页面一级标题（<code>&lt;h1&gt;</code>）的引用，并将它存储在myHeading变量中；<br>然后，将myHeading变量的属性textContent(标题内容)修改为“Hello World!”。</p>
-</li>
-</ol>
-
+        <p>由于毕业设计要完成一个前后端分离的项目，需要一些前端基础知识，本文记录了学习HTML、CSS和JavaScript最基础的入门知识时的一些学习笔记。</p>
+        
+          <p class="article-more-link">
+            <a href="/2022/02/28/HTTP-CSS-JavaScript%E5%9F%BA%E7%A1%80/#more">Read More</a>
+          </p>
+        
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhuyuxi333.github.io/2022/02/28/HTTP-CSS-JavaScript%E5%9F%BA%E7%A1%80/" data-id="cl07fobqa00008hfy9r1u3q4g" data-title="HTTP+CSS+JavaScript基础" class="article-share-link">分享</a>
+      <a data-url="https://zhuyuxi333.github.io/2022/02/28/HTTP-CSS-JavaScript%E5%9F%BA%E7%A1%80/" data-id="cl07gabbv0000c91sekk3a6ti" data-title="HTTP+CSS+JavaScript基础" class="article-share-link">分享</a>
       
       
       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/css/" rel="tag">css</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/http/" rel="tag">http</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/" rel="tag">javascript</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/css/" rel="tag">css</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/http/" rel="tag">http</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/" rel="tag">javascript</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%9C%AC%E7%A7%91%E6%AF%95%E8%AE%BE/" rel="tag">本科毕设</a></li></ul>
 
     </footer>
   </div>
@@ -316,7 +138,19 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p>参考教程：<a href>https://blog.csdn.net/xiaojinlai123/article/details/90694372</a></p>
+        <span id="more"></span>
+
+<!-- toc -->
+
+<ul>
+<li><a href="#vue%E7%AB%AF">vue端</a><ul>
+<li><a href="#view%E5%B1%82%E4%BB%A3%E7%A0%81%E7%BC%96%E5%86%99">View层代码编写</a></li>
+</ul>
+</li>
+</ul>
+<!-- tocstop -->
+
+<p>参考教程：<a href>https://blog.csdn.net/xiaojinlai123/article/details/90694372</a></p>
 <p>Github源码地址：</p>
 <ol>
 <li>本教程代码：</li>
@@ -345,11 +179,11 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhuyuxi333.github.io/2022/02/28/Springboot-Vue%E5%AE%9E%E7%8E%B0%E7%99%BB%E5%BD%95%E5%8A%9F%E8%83%BD/" data-id="cl07fobqf000f8hfy42wye8rg" data-title="Springboot+Vue实现登录功能" class="article-share-link">分享</a>
+      <a data-url="https://zhuyuxi333.github.io/2022/02/28/Springboot-Vue%E5%AE%9E%E7%8E%B0%E7%99%BB%E5%BD%95%E5%8A%9F%E8%83%BD/" data-id="cl07gabbz0003c91sfoqa2atz" data-title="Springboot+Vue实现登录功能" class="article-share-link">分享</a>
       
       
       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/springboot/" rel="tag">springboot</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/vue/" rel="tag">vue</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/springboot/" rel="tag">springboot</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/vue/" rel="tag">vue</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%9C%AC%E7%A7%91%E6%AF%95%E8%AE%BE/" rel="tag">本科毕设</a></li></ul>
 
     </footer>
   </div>
@@ -381,192 +215,20 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <!--toc-->
-
-<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/chenlongjs/article/details/104962275">参考教程</a></p>
-<h1><span id="安装vue">安装vue</span></h1><ol>
-<li>查看node.js和npm版本<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ node -v</span><br><span class="line">v16.13.2</span><br><span class="line">$ npm -v</span><br><span class="line">8.1.2</span><br></pre></td></tr></table></figure></li>
-<li>安装淘宝镜像<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">$ sudo npm install -g cnpm --registry=https://registry.npm.taobao.org</span><br><span class="line"></span><br><span class="line"># 查看是否安装成功</span><br><span class="line">$ cnpm -v</span><br><span class="line">cnpm@7.1.1 (/usr/local/lib/node_modules/cnpm/lib/parse_argv.js)</span><br><span class="line">npm@6.14.16 (/usr/local/lib/node_modules/cnpm/node_modules/npm/lib/npm.js)</span><br><span class="line">node@16.13.2 (/usr/local/bin/node)</span><br><span class="line">npminstall@5.4.1 (/usr/local/lib/node_modules/cnpm/node_modules/npminstall/lib/index.js)</span><br><span class="line">prefix=/usr/local </span><br><span class="line">darwin arm64 21.2.0 </span><br><span class="line">registry=https://registry.npmmirror.com</span><br></pre></td></tr></table></figure></li>
-<li>安装webpack<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo cnpm install webpack -g</span><br></pre></td></tr></table></figure></li>
-<li>安装vue脚手架<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo npm install -g vue-cli</span><br></pre></td></tr></table></figure></li>
-<li>查看是否安装成功<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">$ vue list</span><br><span class="line"></span><br><span class="line">  Available official templates:</span><br><span class="line"></span><br><span class="line">  ★  browserify - A full-featured Browserify + vueify setup with hot-reload, linting &amp; unit testing.</span><br><span class="line">  ★  browserify-simple - A simple Browserify + vueify setup for quick prototyping.</span><br><span class="line">  ★  pwa - PWA template for vue-cli based on the webpack template</span><br><span class="line">  ★  simple - The simplest possible Vue setup in a single HTML file</span><br><span class="line">  ★  webpack - A full-featured Webpack + vue-loader setup with hot reload, linting, testing &amp; css extraction.</span><br><span class="line">  ★  webpack-simple - A simple Webpack + vue-loader setup for quick prototyping.</span><br><span class="line"></span><br></pre></td></tr></table></figure></li>
-</ol>
-<h1><span id="创建vue项目">创建vue项目</span></h1><ol>
-<li>创建文件夹VueProjects，之后所有的vue项目都放在此目录下；进入该目录，创建文件夹VueLearningProjects用于存放所有的学习示例程序。</li>
-<li>进入目录:<code>cd ~/VueProjects/VueLearningProjects</code>，在该目录下执行下面的语句初始化一个vue项目，项目名为vue_project：<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">$ sudo vue init webpack vue_project</span><br><span class="line">...</span><br><span class="line">? Project name vue_project</span><br><span class="line">? Project description A Vue.js project  # 项目名称</span><br><span class="line">? Author ZhuYuxi333 &lt;ZhuYuxi200019@163.com&gt;</span><br><span class="line">? Vue build standalone</span><br><span class="line">? Install vue-router? Yes               # 是否下载vue-router插件</span><br><span class="line">? Use ESLint to lint your code? No      # 是否使用ESLint限制，初学者不建议使用，ESLint限制是为了让代码更规范</span><br><span class="line">? Pick an ESLint preset Standard</span><br><span class="line">? Set up unit tests No                  # 是否建立单元测试</span><br><span class="line">? Setup e2e tests with Nightwatch? No</span><br><span class="line">? Should we run `npm install` for you after the project has been cre</span><br><span class="line">ated? (recommended) npm</span><br><span class="line">...</span><br><span class="line"># Project initialization finished!</span><br><span class="line"># ========================</span><br><span class="line"></span><br><span class="line">To get started:</span><br><span class="line"></span><br><span class="line">  cd vue_project</span><br><span class="line">  npm run dev</span><br><span class="line">  </span><br><span class="line">Documentation can be found at https://vuejs-templates.github.io/webpack</span><br></pre></td></tr></table></figure></li>
-<li>初始化项目完成后在 “~&#x2F;VueProjects&#x2F;VueLearningProjects” 目录下出现了一个名为vue_project的目录，该目录即为vue_project项目的根目录，进入该目录：<code>cd vue_project</code></li>
-<li>安装项目依赖：<code>$ sudo npm install</code></li>
-<li>启动项目：<code>$ npm run dev</code> (关闭：control+C)</li>
-<li>访问 <a target="_blank" rel="noopener" href="http://localhost:8080/">http://localhost:8080</a> 打开vue项目</li>
-</ol>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://zhuyuxi333.github.io/2022/02/28/Mac-%E5%AE%89%E8%A3%85Vue-%E5%88%9B%E5%BB%BA%E7%AC%AC%E4%B8%80%E4%B8%AAvue%E9%A1%B9%E7%9B%AE/" data-id="cl07fobqc00018hfy0cqob5zc" data-title="在Mac系统中安装Vue并创建第一个vue项目" class="article-share-link">分享</a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/vue/" rel="tag">vue</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA-mac/" rel="tag">环境搭建 - mac</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-Remote-Repository" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/02/10/Remote-Repository/" class="article-date">
-  <time class="dt-published" datetime="2022-02-10T08:28:36.000Z" itemprop="datePublished">2022-02-10</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/02/10/Remote-Repository/">Remote Repository</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <ol>
-<li><strong>Connect</strong> local repository with a remote repository:<br><code>$ git remote add origin git@github.com:ZhuYuxi333/learngit.git</code><br>“origin” is the default name Git gives to a remote repository.</li>
-<li>View the connected remote repositories of a local repository: <code>git remote  -v</code></li>
-<li><strong>Push</strong> the contents in local repository to its related remote repository:<ul>
-<li>The first time: <code>git push -u origin main</code></li>
-<li>Later: <code>git push origin master</code></li>
-</ul>
-</li>
-<li><strong>Disconnect</strong> local repository with a remote repository:<br><code>$ git remote rm origin</code></li>
-</ol>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://zhuyuxi333.github.io/2022/02/10/Remote-Repository/" data-id="cl07fobqd00038hfyanrt4li3" data-title="Remote Repository" class="article-share-link">分享</a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/git/" rel="tag">git</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-Undoing-Things" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/02/10/Undoing-Things/" class="article-date">
-  <time class="dt-published" datetime="2022-02-10T08:21:33.000Z" itemprop="datePublished">2022-02-10</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/02/10/Undoing-Things/">Undoing Things</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h2><span id="redo-commit-git-commit-amend">Redo Commit: <code>git commit --amend</code></span></h2><p>How to redo <strong>the last</strong> commit?</p>
-<ol>
-<li>Make changes in the working directory.</li>
-<li>Stage the changes.</li>
-<li>Commit again using <code>git commit --amend</code>.</li>
-</ol>
-<p><code>git commit --amend</code> will:</p>
-<ol>
-<li>Take the changes in the staging area and add it to the last commit.</li>
-<li>Fire up the commit-message editor of the last commit for you to overwrite with a improved commit message.</li>
-</ol>
-<h2><span id="unstage-a-staged-file">Unstage a Staged File</span></h2><ul>
-<li><code>git reset HEAD &lt;file&gt;</code></li>
-<li><code>git restore --staged &lt;file&gt;</code> (Git version above 2.23.0)</li>
-</ul>
-<h2><span id="unmodify-a-modified-file">Unmodify a Modified File:</span></h2><p>Revert <file> back to what it looked like in the last commit.</file></p>
-<ul>
-<li><code>git checkout -- &lt;file&gt;</code></li>
-<li><code>git restore &lt;file&gt;</code> (Git version above 2.23.0)</li>
-</ul>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://zhuyuxi333.github.io/2022/02/10/Undoing-Things/" data-id="cl07fobqg000i8hfyc8cxfr1d" data-title="Undoing Things" class="article-share-link">分享</a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/git/" rel="tag">git</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-git-log" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/02/07/git-log/" class="article-date">
-  <time class="dt-published" datetime="2022-02-07T07:38:35.000Z" itemprop="datePublished">2022-02-07</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/git/">git</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/02/07/git-log/">Viewing the Commit History (git log)</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p><strong>[Abstract]</strong><br>We can use <code>git log</code> command to view the commit history in a Git repository.<br>We can also add some additional options to specify the log format (such as <code>--pretty=oneline</code> and <code>--pretty-format</code>) or filter the commit entry (such as <code>-&lt;n&gt;</code>).</p>
+        <p>本文记录了在Mac系统上配置Vue环境，并成功创建运行第一个Hello World项目的过程。</p>
         
           <p class="article-more-link">
-            <a href="/2022/02/07/git-log/#more">Read More</a>
+            <a href="/2022/02/28/Mac-%E5%AE%89%E8%A3%85Vue-%E5%88%9B%E5%BB%BA%E7%AC%AC%E4%B8%80%E4%B8%AAvue%E9%A1%B9%E7%9B%AE/#more">Read More</a>
           </p>
         
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhuyuxi333.github.io/2022/02/07/git-log/" data-id="cl07fobqf000g8hfy59s0ez63" data-title="Viewing the Commit History (git log)" class="article-share-link">分享</a>
+      <a data-url="https://zhuyuxi333.github.io/2022/02/28/Mac-%E5%AE%89%E8%A3%85Vue-%E5%88%9B%E5%BB%BA%E7%AC%AC%E4%B8%80%E4%B8%AAvue%E9%A1%B9%E7%9B%AE/" data-id="cl07gabby0001c91s7br361ea" data-title="在Mac系统中安装Vue并创建第一个vue项目" class="article-share-link">分享</a>
       
       
       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/git/" rel="tag">git</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/vue/" rel="tag">vue</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%9C%AC%E7%A7%91%E6%AF%95%E8%AE%BE/" rel="tag">本科毕设</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA-mac/" rel="tag">环境搭建 - mac</a></li></ul>
 
     </footer>
   </div>
@@ -583,20 +245,13 @@
           <aside id="sidebar">
   
     
-  <div class="widget-wrap">
-    <h3 class="widget-title">分类</h3>
-    <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/git/">git</a></li></ul>
-    </div>
-  </div>
-
 
   
     
   <div class="widget-wrap">
     <h3 class="widget-title">标签</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/css/" rel="tag">css</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/git/" rel="tag">git</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/http/" rel="tag">http</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/javascript/" rel="tag">javascript</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/springboot/" rel="tag">springboot</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vue/" rel="tag">vue</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA-mac/" rel="tag">环境搭建 - mac</a></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/css/" rel="tag">css</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/http/" rel="tag">http</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/javascript/" rel="tag">javascript</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/springboot/" rel="tag">springboot</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vue/" rel="tag">vue</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%9C%AC%E7%A7%91%E6%AF%95%E8%AE%BE/" rel="tag">本科毕设</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA-mac/" rel="tag">环境搭建 - mac</a></li></ul>
     </div>
   </div>
 
@@ -606,7 +261,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">标签云</h3>
     <div class="widget tagcloud">
-      <a href="/tags/css/" style="font-size: 10px;">css</a> <a href="/tags/git/" style="font-size: 20px;">git</a> <a href="/tags/http/" style="font-size: 10px;">http</a> <a href="/tags/javascript/" style="font-size: 10px;">javascript</a> <a href="/tags/springboot/" style="font-size: 10px;">springboot</a> <a href="/tags/vue/" style="font-size: 15px;">vue</a> <a href="/tags/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA-mac/" style="font-size: 10px;">环境搭建 - mac</a>
+      <a href="/tags/css/" style="font-size: 10px;">css</a> <a href="/tags/http/" style="font-size: 10px;">http</a> <a href="/tags/javascript/" style="font-size: 10px;">javascript</a> <a href="/tags/springboot/" style="font-size: 10px;">springboot</a> <a href="/tags/vue/" style="font-size: 15px;">vue</a> <a href="/tags/%E6%9C%AC%E7%A7%91%E6%AF%95%E8%AE%BE/" style="font-size: 20px;">本科毕设</a> <a href="/tags/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA-mac/" style="font-size: 10px;">环境搭建 - mac</a>
     </div>
   </div>
 
@@ -637,14 +292,6 @@
         
           <li>
             <a href="/2022/02/28/Mac-%E5%AE%89%E8%A3%85Vue-%E5%88%9B%E5%BB%BA%E7%AC%AC%E4%B8%80%E4%B8%AAvue%E9%A1%B9%E7%9B%AE/">在Mac系统中安装Vue并创建第一个vue项目</a>
-          </li>
-        
-          <li>
-            <a href="/2022/02/10/Remote-Repository/">Remote Repository</a>
-          </li>
-        
-          <li>
-            <a href="/2022/02/10/Undoing-Things/">Undoing Things</a>
           </li>
         
       </ul>
